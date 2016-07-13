@@ -1,0 +1,237 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+  <title>飞凡 – dashboard</title>
+  <link rel="stylesheet" media="all" href="/stylesheets/theme/bootstrap.css" />
+  <link rel="stylesheet" media="all" href="/stylesheets/theme/style.css" />
+  <link rel="stylesheet" media="all" href="/assets/user-styles-4058cce4b243cb013f2814f27de5086a9d6ecaee093a8f76caae53f9923133a3.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="imagetoolbar" content="no">
+  <script src="/assets/publify_admin-61fc9965b5541183fbff6024ecae7f5b67b5932de1d33acc26ee6b3bd84fe6d7.js" async="async"></script>
+  <link rel="stylesheet" media="screen" href="/assets/publify_admin-26d3dd3ffe8dff59f64efe53203f25ec00c8f31eab5d611375b9e10a0538a8d6.css" />
+  <meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="4Y1kHc+mf/0HvmOm49AoIC7GfxbbvJ1hu3XxZbkXyHmXP3nTtV0EL6masbqkpMqs4mLa0Wsz23UQDsUWkWzu8Q==" />
+</head>
+<body>
+  <nav class='navbar navbar-default navbar-fixed-top' role="navigation">
+  <div class="navbar-header">
+    <a class="navbar-brand" href="/admin"><span class="glyphicon glyphicon-home"></span></a>
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#sidebar-top">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+  </div>
+  <div class="collapse navbar-collapse" id="sidebar-top">
+    <ul class='nav navbar-nav'>
+        <li class='dropdown'>
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+            Articles
+            <b class="caret"></b>
+          </a>
+          <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+            <li><a href="/admin/content">All articles</a></li>
+            <li><a href="/admin/content/new">New Article</a></li>
+            <li><a href="/admin/feedback">Feedback</a></li>
+            <li><a href="/admin/tags">Tags</a></li>
+            <li><a href="/admin/post_types">Article types</a></li>
+            <li><a href="/admin/redirects">Redirects</a></li>
+          </ul>
+        </li>
+        <li><a href="/admin/notes">Notes</a></li>
+        <li class='dropdown'>
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+            Pages
+            <b class="caret"></b>
+          </a>
+          <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+            <li><a href="/admin/pages">All pages</a></li>
+            <li><a href="/admin/pages/new">New Page</a></li>
+          </ul>
+        </li>
+        <li><a href="/admin/resources">Media Library</a></li>
+        <li class='dropdown'>
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+            Design
+            <b class="caret"></b>
+          </a>
+          <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+            <li><a href="/admin/themes">Choose theme</a></li>
+            <li><a href="/admin/sidebar">Customize sidebar</a></li>
+          </ul>
+        </li>
+        <li class='dropdown'>
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+            Settings
+            <b class="caret"></b>
+          </a>
+          <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+            <li><a href="/admin/settings/index">General settings</a></li>
+            <li><a href="/admin/settings/write">Write</a></li>
+            <li><a href="/admin/settings/display">Display</a></li>
+            <li><a href="/admin/settings/feedback">Feedback</a></li>
+            <li><a href="/admin/cache">Cache</a></li>
+            <li><a href="/admin/users">Manage Users</a></li>
+          </ul>
+        </li>
+        <li class='dropdown'>
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+            SEO
+            <b class="caret"></b>
+          </a>
+          <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+            <li><a href="/admin/seo?section=general">Global SEO settings</a></li>
+            <li><a href="/admin/seo?section=permalinks">Permalinks</a></li>
+            <li><a href="/admin/seo?section=titles">Titles</a></li>
+          </ul>
+        </li>
+    </ul>
+    <ul class='nav navbar-nav pull-right'>
+      <li class='dropdown'>
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+          Logged in as Publify Admin
+          <b class="caret"></b>
+        </a>
+        <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+          <li><a href="/admin/profiles">Profile</a></li>
+          <li role="presentation" class="divider"></li>
+          <li><a href="https://github.com/fdv/publify/wiki">Documentation</a></li>
+          <li><a href="https://github.com/fdv/publify/issues">Report a bug</a></li>
+          <li><a href="https://github.com/fdv/publify/wiki/In-Page-Plugins">In page plugins</a></li>
+          <li><a href="https://github.com/fdv/publify/wiki/Sidebar-plugins">Sidebar plugins</a></li>
+          <li role="presentation" class="divider"></li>
+          <li><a rel="nofollow" data-method="delete" href="/users/sign_out">Log out &raquo;</a></li>
+        </ul>
+      </li>
+    </ul>
+    <ul class='nav navbar-nav pull-right'>
+      <li class='dropdown'>
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+          New
+          <b class="caret"></b>
+        </a>
+        <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+          <li><a href="/admin/content/new">New Article</a></li>
+          <li><a href="/admin/pages?actions=new">New Page</a></li>
+          <li><a href="/admin/resources">New Media</a></li>
+          <li><a href="/admin/notes">New Note</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+  <div id='main'>
+    <div class='row'>
+      <div class='col-md-12'>
+        <div style='margin-top:20px'>
+          
+        </div>
+          <div class='page-header'>
+            <i class="glyphicon glyphicon-large glyphicon-home"></i>
+<h2 class="page-title">Welcome back, admin!</h2>
+
+          </div>
+        
+<div class='alert alert-info'>
+  <button type="button" class="close" data-dismiss="alert">
+    <span aria-hidden="true">&times;</span>
+    <span class="sr-only">Close</span>
+  </button>
+  <p>
+    This place gives you a quick overview of what happens on your Publify blog and what you can do. Maybe will you want to <a href="/admin/content/new">write a post</a>, <a href="/admin/pages/new">write a page</a>, <a href="/admin/profiles">update your profile or change your password</a>
+  </p>
+  <p>
+    You can also do a bit of design, <a href="/admin/themes">change your blog presentation</a> or <a href="/admin/sidebar">enable plugins</a>.
+  </p>
+  <p>
+  If you need help, <a href="http://publify.co">read our documentation</a>.
+  </p>
+</div>
+
+
+<div class='row'>
+  <div class='col-md-6'>
+    <div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">Today</h3>
+  </div>
+  <div class="panel-body">
+    <p>1 articles and 0 comments were posted since your last login</p>
+    <p>You&#39;re running Publify 8.3.0 </p>
+    <div class='col-md-6'>
+        <h4 class='page-header'>Content</h4>
+        <p><a href="/admin/content">1 article</a></p>
+        <p><a href="/admin/content?search%5Buser_id%5D=1">1 article written by you</a></p>
+        <p><a href="/admin/content?search%5Bstate%5D=drafts">no draft</a></p>
+        <p><a href="/admin/pages">no page</a></p>
+        <p><a href="/admin/notes">no note</a></p>
+    </div>
+    <div class='col-md-6'>
+        <h4 class='page-header'>Feedback</h4>
+        <p><a href="/admin/feedback">no comment</a></p>
+        <p><a href="/admin/feedback?only=ham">no approved</a></p>
+        <p><a href="/admin/feedback?only=unapproved">no unconfirmed</a></p>
+        <p><a href="/admin/feedback?only=spam">no spam</a></p>
+    </div>
+  </div>
+</div>
+
+    <div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class='panel-title'>Latest Comments</h3>
+  </div>
+  <div class="panel-body">
+    <ul class='list-unstyled' id="commentList">
+        <li class='alert alert-info'>No comments yet</li>
+
+    </ul>
+  </div>
+</div>
+
+  </div>
+  <div class='col-md-6'>
+    <div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class='panel-title'>Your drafts</h3>
+  </div>
+  <div class="panel-body">
+    <ul class='list-unstyled'>
+        <li class='alert alert-info'>
+        <a href="/admin/content/new">No drafts yet, why don&#39;t you write one</a> ?
+        </li>
+    </ul>
+  </div>
+</div>
+
+    <div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">Inbound links</h3>
+  </div>
+  <div class="panel-body">
+    <ul class='list-unstyled'>
+          <li class='alert alert-info'>
+          No one made a link to you yet
+          </li>
+    </ul>
+  </div>
+</div>
+
+  </div>
+</div>
+
+      </div>
+    </div>
+  <footer>
+    <div class='row'>
+      <div class='col-md-12'>
+        <a href="http://localhost:3000">飞凡</a> is proudly powered by Publify 8.3.0 – Icons courtesy of <a href='http://glyphicons.com/'>Glyphicons</a>
+      </div>
+    </div>
+  </footer>
+</div>
+</body>
+</html>

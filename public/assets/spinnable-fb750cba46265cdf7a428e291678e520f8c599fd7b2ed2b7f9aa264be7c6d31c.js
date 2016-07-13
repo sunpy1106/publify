@@ -1,0 +1,1 @@
+$(document).ready(function(){$("form.spinnable").on("ajax:before",function(){$("#spinner").show()}),$("form.spinnable").on("ajax:after",function(){$("#spinner").hide()})});

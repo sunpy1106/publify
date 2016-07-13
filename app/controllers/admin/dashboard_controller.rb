@@ -11,13 +11,12 @@ class Admin::DashboardController < Admin::BaseController
     # Since last venue
     @newposts_count = Article.published_since(current_user.last_sign_in_at).count
     @newcomments_count = Feedback.published_since(current_user.last_sign_in_at).count
-
     # Today
     @statposts = Article.published.where('published_at > ?', today).count
     @statsdrafts = Article.drafts.where('created_at > ?', today).count
     @statspages = Page.where('published_at > ?', today).count
     @statuses = Note.where('published_at > ?', today).count
-    @statuserposts = Article.published.where('published_at > ?', today).count(conditions: { user_id: current_user.id })
+    @statuserposts = Article.published.where('published_at > ? and user_id = ?', today,current_user.id ).count
     @statcomments = Comment.where('created_at > ?', today).count
     @presumedspam = Comment.presumed_spam.where('created_at > ?', today).count
     @confirmed = Comment.ham.where('created_at > ?', today).count

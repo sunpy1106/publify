@@ -106,6 +106,13 @@ group :development do
   gem 'guard-rspec'
 end
 
+# add by liufei @20160713
+gem 'simditor'
+group :production do
+  gem 'therubyracer'
+end
+#add end
+
 group :test do
   gem 'codeclimate-test-reporter', '~> 0.5.0', require: nil
 end

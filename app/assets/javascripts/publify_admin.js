@@ -6,7 +6,7 @@
 //= require datetimepicker
 //= require bootstrap
 //= require publify_jquery
-//= require quicktags
+//= require simditor
 //= require widearea
 //= require tagmanager
 //= require typeahead
@@ -97,6 +97,16 @@ function check_all(checkbox) {
 }
 
 $(document).ready(function() {
+  // replace the editor,add by liufei@20160713
+  editor = new Simditor({
+  textarea: $('#article_body_and_extended'),
+  toolbar: [
+    'title','bold','italic','underline','strikethrough','color','|',
+    'ol','ul','blockquote','code','table','link','image','hr','|',
+    'indent','outdent'
+  ],
+  pasteImage: false}
+  );
   $('#article_form').each(function(e){autosave_request(e)});
   $('#article_form').submit(function(e){save_article_tags()});
   $('#article_form').each(function(e){tag_manager()});
