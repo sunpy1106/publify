@@ -25,7 +25,6 @@
 <div class="row">
   <div class="col-md-2" id="quicktags-block">
     <div id="quicktags" class="pull-right">
-      <script type="text/javascript">edToolbar('article_body_and_extended', '<%= @article.text_filter %>');</script>
     </div>
   </div>
   <div class="col-md-8">
@@ -47,7 +46,7 @@
         <div class="well">
           <h4><%= t('.tags') %></h4>
           <div class="form-group">
-            <%= text_field 'article', 'keywords', {autocomplete: 'off', class: 'form-control tm-input'} %>
+            <%= text_field 'article', 'keywords', {autocomplete: 'on', class: 'form-control tm-input'} %>
           </div>
           <p class="alert alert-warning"><%=t('.tags_explanation') %></p>
         </div>
