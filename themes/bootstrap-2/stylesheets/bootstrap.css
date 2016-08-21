@@ -882,7 +882,7 @@ html {
 }
 body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 18px;
+  font-size: 15px;
   line-height: 1.42857143;
   color: #333333;
   background-color: #ffffff;
@@ -1063,27 +1063,27 @@ h6 .small,
 }
 h1,
 .h1 {
-  font-size: 46px;
+  font-size: 30px;
 }
 h2,
 .h2 {
-  font-size: 38px;
+  font-size: 26px;
 }
 h3,
 .h3 {
-  font-size: 31px;
+  font-size: 22px;
 }
 h4,
 .h4 {
-  font-size: 23px;
+  font-size: 18px;
 }
 h5,
 .h5 {
-  font-size: 18px;
+  font-size: 16px;
 }
 h6,
 .h6 {
-  font-size: 16px;
+  font-size: 14px;
 }
 p {
   margin: 0 0 12.5px;
@@ -1353,7 +1353,7 @@ pre {
   display: block;
   padding: 12px;
   margin: 0 0 12.5px;
-  font-size: 17px;
+  font-size: 12px;
   line-height: 1.42857143;
   word-break: break-all;
   word-wrap: break-word;
@@ -1366,7 +1366,7 @@ pre code {
   padding: 0;
   font-size: inherit;
   color: inherit;
-  white-space: pre-wrap;
+  white-space: pre;
   background-color: transparent;
   border-radius: 0;
 }
@@ -1581,7 +1581,7 @@ pre code {
     width: 83.33333333%;
   }
   .col-sm-9 {
-    width: 75%;
+    width: 70%;
   }
   .col-sm-8 {
     width: 66.66666667%;
@@ -1602,7 +1602,7 @@ pre code {
     width: 25%;
   }
   .col-sm-2 {
-    width: 16.66666667%;
+    width: 20%;
   }
   .col-sm-1 {
     width: 8.33333333%;
